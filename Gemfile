@@ -13,11 +13,12 @@ gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
+gem 'less-rails', '~> 2.7', '>= 2.7.1'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
 # gem 'coffee-rails', '~> 4.2'
@@ -55,7 +56,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise', '~> 4.2'
 
-gem 'nio4r', '~> 2.2.0'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
-gem 'nokogiri', '~> 1.8', '>= 1.8.1'
-
+gem 'twitter-bootstrap-rails', '~> 4.0'
