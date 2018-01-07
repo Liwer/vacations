@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
+
+  resources :vacations do
+  collection do
+    # get 'vacation_new'
+    # post 'vacation_create'
+  end
+end
+
+
   devise_for :users, path: 'users'
-  get 'vacations/index'
 
   root 'vacations#index'
 
