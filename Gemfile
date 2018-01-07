@@ -59,3 +59,12 @@ gem 'devise', '~> 4.2'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 gem 'twitter-bootstrap-rails', '~> 4.0'
+
+gem 'bootstrap-datepicker-rails', '~> 1.6', '>= 1.6.1.1'
+
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
+
+gem 'momentjs-rails', '~> 2.9',  :github => 'derekprior/momentjs-rails'
+
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+

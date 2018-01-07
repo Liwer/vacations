@@ -4,7 +4,11 @@ class VacationsController < ApplicationController
   # GET /vacations
   # GET /vacations.json
   def index
-    @vacations = current_user.vacations
+    if user_signed_in?
+      @vacations = current_user.vacations
+    else
+      redirect_to  new_user_session_path
+    end
   end
 
   # GET /vacations/1
@@ -26,8 +30,6 @@ class VacationsController < ApplicationController
   def create
     @vacation = Vacation.new(vacation_params)
     @vacation.user_id = current_user.id
-    # abort @vacation.inspect
-
     respond_to do |format|
       if @vacation.save
         format.html { redirect_to @vacation, notice: 'Vacation was successfully created.' }
@@ -74,6 +76,6 @@ class VacationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def vacation_params
-      params.fetch(:vacation, {})
+      params.require(:vacation).permit(:start_date, :end_date, :description, :user_id)
     end
 end
