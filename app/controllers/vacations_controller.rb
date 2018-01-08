@@ -30,6 +30,17 @@ class VacationsController < ApplicationController
   def create
     @vacation = Vacation.new(vacation_params)
     @vacation.user_id = current_user.id
+    if @vacation.end_date <= @vacation.start_date
+      flash[:notice] = "Dates are not selected correctly"
+      redirect_to vacations_path
+    else   
+      @vacation.days_count = @vacation.end_date.mjd - @vacation.start_date.mjd
+    if  @vacation.days_count > current_user.balance || current_user.balance < 1
+      flash[:notice] = "Your balance is less than the specified number of days"
+      redirect_to vacations_path
+    else
+    current_user.balance = current_user.balance - @vacation.days_count
+      current_user.save
     respond_to do |format|
       if @vacation.save
         format.html { redirect_to @vacation, notice: 'Vacation was successfully created.' }
@@ -38,6 +49,8 @@ class VacationsController < ApplicationController
         format.html { render :new }
         format.json { render json: @vacation.errors, status: :unprocessable_entity }
       end
+    end
+    end
     end
   end
 
@@ -58,6 +71,7 @@ class VacationsController < ApplicationController
   # DELETE /vacations/1
   # DELETE /vacations/1.json
   def destroy
+
     @vacation.destroy
     respond_to do |format|
       format.html { redirect_to vacations_url, notice: 'Vacation was successfully destroyed.' }
@@ -71,11 +85,12 @@ class VacationsController < ApplicationController
       @vacation = Vacation.find(params[:id])
       unless @vacation.user == current_user
         flash[:notice] = "You can edit only your own vacation!"
+        redirect_to :back
       end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def vacation_params
-      params.require(:vacation).permit(:start_date, :end_date, :description, :user_id)
+      params.require(:vacation).permit(:start_date, :end_date, :description, :user_id, :days_count)
     end
 end
