@@ -1,1 +1,1 @@
-// $('.datetimepicker').datetimepicker();
+$('.datetimepicker').datetimepicker();

@@ -1,9 +1,16 @@
-<%= simple_form_for @vacation do |f| %>
-<div class='date_pikers'>
-    <%= f.input :start_date, as: :date_picker%>
-    <%= f.input :end_date, as: :date_picker%>
+  <div class="row">
+      <%= simple_form_for @vacation, html: { class: 'form-group' } do |f| %>
+      <div class='row'>
+        <div class="col-xs-6">
+          <%= f.input :start_date, as: :date_picker, placeholder: "dd/mm/yyyy" %>
+        </div>
+        <div class="col-xs-6">
+          <%= f.input :end_date, as: :date_picker, placeholder: "dd/mm/yyyy"%>
+        </div>  
+      </div>
+      <h4 class="control-label">Description</h4>
+      <%= f.text_area :description, class: 'form-control' %>
+      <%= f.button :submit, class: 'formSub' %>
+      <% end %>
+    </div>
 </div>
-<%= f.text_area :description %>
-  <%= f.button :submit %>
-<% end %>
-

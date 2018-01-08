@@ -13,9 +13,10 @@
   	<div class="container">
       <div class="row">
 	      <div class="col-xs-12 col-sm-6 col-md-6">
-		      <a class="logo" href="#">
-				<h4>Vacation</h4>	
-		      </a>
+		    <%= link_to('Vacation', root_path, class: "logo", tag: "h4")  %>
+			<!-- <a class="logo" href=""> -->
+				<!-- <h4>Vacation</h4>	 -->
+		    <!-- </a> -->
 	      </div>
 	      <div class="col-xs-6 col-md-6">
 	   	      <% if user_signed_in? %>
@@ -30,6 +31,6 @@
  	 </div>
   </div>
 </nav>
-  	    <%= yield %>
+	<%= yield %>
   </body>
 </html>
