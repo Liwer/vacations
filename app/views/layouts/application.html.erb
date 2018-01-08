@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Vacations</title>
     <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+            <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-  <nav class="navbar navbar-default">
-  	<div class="container">
-      <div class="row">
-	      <div class="col-xs-12 col-sm-6 col-md-6">
-		    <%= link_to('Vacation', root_path, class: "logo", tag: "h4")  %>
-			<!-- <a class="logo" href=""> -->
-				<!-- <h4>Vacation</h4>	 -->
-		    <!-- </a> -->
-	      </div>
-	      <div class="col-xs-6 col-md-6">
-	   	      <% if user_signed_in? %>
-		      	<p class="navbar-text">You have <%= current_user.balance %> days of unused vacation </p>
-		      	<p class="navbar-text">Signed in as <%= current_user.email %> </p>
-		      		<span><%= link_to('Logout', destroy_user_session_path, method: :delete, class: "btn btn-default navbar-btn") %>        
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <%= link_to('Vacation', root_path, class: "logo", tag: "h4")  %>
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                        <% if user_signed_in? %>
+                            <p class="navbar-text">You have
+                                <%= current_user.balance %> days of unused vacation </p>
+                            <p class="navbar-text">Signed in as
+                                <%= current_user.email %>
+                            </p>
+                            <span><%= link_to('Logout', destroy_user_session_path, method: :delete, class: "btn btn-default navbar-btn") %>        
 		  			</span>
-    			<% else %>
-		       		<%= link_to('Login', new_user_session_path, class: "btn btn-default navbar-btn")  %>  
-				<% end %>
-		</div>
- 	 </div>
-  </div>
-</nav>
-	<%= yield %>
-  </body>
+                            <% else %>
+                                <%= link_to('Login', new_user_session_path, class: "btn btn-default navbar-btn")  %>
+                            <% end %>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <%= yield %>
+</body>
+
 </html>
