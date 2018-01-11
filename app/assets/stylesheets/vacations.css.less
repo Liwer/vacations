@@ -3,9 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
+
 
 header {
 
@@ -17,8 +19,30 @@ header {
             text-decoration: none;
         }
     }
-    a.btn {
+    a.login {
         float: right;
+    }
+    a.newVacation {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+}
+
+section.indexVacation {
+    .indexWrapper{
+        margin: 0 auto;
+        max-width: 532px;
+
+        h1 {
+            text-align: center;
+            padding-bottom: 25px;
+        }
+
+        ul.list-group {
+            .btn-group{
+                margin-left: 30px;    
+             }
+        }
     }
 }
 

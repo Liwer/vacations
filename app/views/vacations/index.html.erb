@@ -1,17 +1,22 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Your vacations</h1>
-
-<ol class="vacationDates">
-  <% @vacations.each do |vacation|%>
-      <li> Start of vacation <%= vacation.start_date%> - End of vacation <%= vacation.end_date%></li> 
-    <%= link_to 'Show', vacation, :class => "btn btn-default" %>
-    <%= link_to 'Edit', edit_vacation_path(vacation), :class => "btn btn-default" %>
-    <%= link_to 'Destroy', vacation, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default" %>
-  <%end%>
-</ol>
-
-<br>
-
-
-<%= link_to 'New Vacation', new_vacation_path, :class => "btn btn-default"  %>
+<section class="indexVacation">
+	<div class="indexWrapper">
+		<p id="notice"><%= notice %></p>
+		<div class="row">
+			<h1>Your vacations list</h1>
+		</div>
+		<div class="row">
+			<ul class="list-group">
+			  <% @vacations.each do |vacation|%>
+			      <li class="list-group-item"> 
+			      	Start of vacation: <%= vacation.start_date%> - End of vacation: <%= vacation.end_date%>
+					<div class="btn-group" role="group" aria-label="...">
+				    	<%= link_to 'Edit', edit_vacation_path(vacation), :class => "btn btn-default" %>
+				    	<%= link_to 'Destroy', vacation, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default" %>
+				    </div>	
+			      </li> 
+			    
+			  <%end%>
+			</ul>
+		</div>
+	</div>
+</section>
