@@ -23711,3 +23711,1788 @@ Processing by VacationsController#new as HTML
 Completed 200 OK in 224ms (Views: 220.9ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:22:59 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VacationsController#new as HTML
+Completed 401 Unauthorized in 50ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `balance' for nil:NilClass):
+  
+app/controllers/vacations_controller.rb:22:in `new'
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:23:04 +0200
+Processing by VacationsController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-01-11 15:23:04 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (104.2ms)
+Completed 401 Unauthorized in 1195ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'moment.min' with type 'application/javascript'
+Checked in these paths: 
+  /home/li/projects/rails projects/vacations/app/assets/config
+  /home/li/projects/rails projects/vacations/app/assets/images
+  /home/li/projects/rails projects/vacations/app/assets/javascripts
+  /home/li/projects/rails projects/vacations/app/assets/stylesheets
+  /home/li/projects/rails projects/vacations/vendor/assets/javascripts
+  /home/li/projects/rails projects/vacations/vendor/assets/stylesheets
+  /home/li/.rvm/gems/ruby-2.5.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  /home/li/.rvm/gems/ruby-2.5.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  /home/li/.rvm/gems/ruby-2.5.0/gems/momentjs-rails-2.17.1/vendor/assets/javascripts
+  /home/li/.rvm/gems/ruby-2.5.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /home/li/.rvm/gems/ruby-2.5.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /home/li/.rvm/gems/ruby-2.5.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /home/li/.rvm/gems/ruby-2.5.0/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /home/li/.rvm/gems/ruby-2.5.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/li/.rvm/gems/ruby-2.5.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/li/.rvm/gems/ruby-2.5.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/li/.rvm/gems/ruby-2.5.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/li/projects/rails projects/vacations/node_modules):
+    4: <head>
+    5:     <title>Vacations</title>
+    6:     <%= csrf_meta_tags %>
+    7:         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:             <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9: </head>
+   10: 
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___673719614694256303_31230380'
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:23:10 +0200
+Processing by VacationsController#index as HTML
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-01-11 15:23:10 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.7ms)
+Completed 401 Unauthorized in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'moment.min' with type 'application/javascript'
+Checked in these paths: 
+  /home/li/projects/rails projects/vacations/app/assets/config
+  /home/li/projects/rails projects/vacations/app/assets/images
+  /home/li/projects/rails projects/vacations/app/assets/javascripts
+  /home/li/projects/rails projects/vacations/app/assets/stylesheets
+  /home/li/projects/rails projects/vacations/vendor/assets/javascripts
+  /home/li/projects/rails projects/vacations/vendor/assets/stylesheets
+  /home/li/.rvm/gems/ruby-2.5.0/gems/font-awesome-rails-4.7.0.2/app/assets/fonts
+  /home/li/.rvm/gems/ruby-2.5.0/gems/font-awesome-rails-4.7.0.2/app/assets/stylesheets
+  /home/li/.rvm/gems/ruby-2.5.0/gems/momentjs-rails-2.17.1/vendor/assets/javascripts
+  /home/li/.rvm/gems/ruby-2.5.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /home/li/.rvm/gems/ruby-2.5.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /home/li/.rvm/gems/ruby-2.5.0/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /home/li/.rvm/gems/ruby-2.5.0/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /home/li/.rvm/gems/ruby-2.5.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/li/.rvm/gems/ruby-2.5.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/li/.rvm/gems/ruby-2.5.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/li/.rvm/gems/ruby-2.5.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/li/projects/rails projects/vacations/node_modules):
+    4: <head>
+    5:     <title>Vacations</title>
+    6:     <%= csrf_meta_tags %>
+    7:         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:             <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9: </head>
+   10: 
+  
+app/assets/javascripts/application.js:17
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___673719614694256303_69875988605180'
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-01-11 15:23:34 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 708ms (Views: 706.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-01-11 15:23:37 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kxjvBGW7gF93i7lMcahmReGPEZjnR043dQpl2yitXJ72jWZHXiJUGcSPaooVEgT7759A7fZ7NndhtB79Y19sCA==", "user"=>{"email"=>"one@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "one@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-01-11 13:23:37.332193"], ["sign_in_count", 2], ["updated_at", "2018-01-11 13:23:37.334059"], ["id", 28]]
+  [1m[35m (108.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 452ms (ActiveRecord: 109.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:23:37 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 28]]
+  Rendered vacations/index.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 155ms (Views: 119.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:24:20 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 28]]
+  Rendered vacations/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 79ms (Views: 74.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:24:22 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (144.6ms)
+  Rendered vacations/new.html.erb within layouts/application (145.9ms)
+Completed 200 OK in 283ms (Views: 245.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:24:24 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 28]]
+  Rendered vacations/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 136ms (Views: 132.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/vacations/29" for 127.0.0.1 at 2018-01-11 15:24:25 +0200
+Processing by VacationsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/show.html.erb within layouts/application
+  Rendered vacations/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 167ms (Views: 123.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:24:26 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 28]]
+  Rendered vacations/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 112ms (Views: 108.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/29/edit" for 127.0.0.1 at 2018-01-11 15:24:53 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (11.0ms)
+  Rendered vacations/edit.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 98ms (Views: 93.0ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/vacations/29" for 127.0.0.1 at 2018-01-11 15:25:20 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n0kINxPSBhFwbLe3Kgnm9s77OiPQ63dAnquyWwA9rQ0PuUDa1uAuwGWLSI0j6F0bZeeDmKDjDBg30czIiTOEdw==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"10", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"19", "description"=>""}, "commit"=>"Update Vacation", "id"=>"29"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 125], ["updated_at", "2018-01-11 13:25:20.555936"], ["id", 28]]
+  [1m[35m (219.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 401 Unauthorized in 230ms (ActiveRecord: 220.9ms)
+
+
+  
+SystemExit ("2018"):
+  
+app/controllers/vacations_controller.rb:72:in `abort'
+app/controllers/vacations_controller.rb:72:in `update'
+Started PATCH "/vacations/29" for 127.0.0.1 at 2018-01-11 15:25:49 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W2bKlWByvKEeoE6A7Ra2ZDLaIQuvXQtuUcMiGfI3sARqSX+SQ7geMApfqk3rufE5oxKJigEcyd+xzkUl5Gdf3A==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"10", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"19", "description"=>""}, "commit"=>"Update Vacation", "id"=>"29"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 130], ["updated_at", "2018-01-11 13:25:49.520022"], ["id", 28]]
+  [1m[35m (87.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 401 Unauthorized in 153ms (ActiveRecord: 91.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/vacations_controller.rb:72:in `update'
+Started PATCH "/vacations/29" for 127.0.0.1 at 2018-01-11 15:26:12 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W2bKlWByvKEeoE6A7Ra2ZDLaIQuvXQtuUcMiGfI3sARqSX+SQ7geMApfqk3rufE5oxKJigEcyd+xzkUl5Gdf3A==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"10", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"19", "description"=>""}, "commit"=>"Update Vacation", "id"=>"29"}
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 135], ["updated_at", "2018-01-11 13:26:12.948855"], ["id", 28]]
+  [1m[35m (125.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 401 Unauthorized in 188ms (ActiveRecord: 132.9ms)
+
+
+  
+SystemExit (nil):
+  
+app/controllers/vacations_controller.rb:72:in `abort'
+app/controllers/vacations_controller.rb:72:in `update'
+Started PATCH "/vacations/29" for 127.0.0.1 at 2018-01-11 15:26:31 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W2bKlWByvKEeoE6A7Ra2ZDLaIQuvXQtuUcMiGfI3sARqSX+SQ7geMApfqk3rufE5oxKJigEcyd+xzkUl5Gdf3A==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"10", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"19", "description"=>""}, "commit"=>"Update Vacation", "id"=>"29"}
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 140], ["updated_at", "2018-01-11 13:26:31.815002"], ["id", 28]]
+  [1m[35m (103.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 401 Unauthorized in 156ms (ActiveRecord: 106.7ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 0..1)):
+  
+app/controllers/vacations_controller.rb:72:in `abort'
+app/controllers/vacations_controller.rb:72:in `update'
+Started PATCH "/vacations/29" for 127.0.0.1 at 2018-01-11 15:26:50 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W2bKlWByvKEeoE6A7Ra2ZDLaIQuvXQtuUcMiGfI3sARqSX+SQ7geMApfqk3rufE5oxKJigEcyd+xzkUl5Gdf3A==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"10", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"19", "description"=>""}, "commit"=>"Update Vacation", "id"=>"29"}
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 145], ["updated_at", "2018-01-11 13:26:50.952581"], ["id", 28]]
+  [1m[35m (99.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 401 Unauthorized in 153ms (ActiveRecord: 102.5ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/vacations_controller.rb:72:in `inspect'
+app/controllers/vacations_controller.rb:72:in `update'
+Started PATCH "/vacations/29" for 127.0.0.1 at 2018-01-11 15:27:00 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W2bKlWByvKEeoE6A7Ra2ZDLaIQuvXQtuUcMiGfI3sARqSX+SQ7geMApfqk3rufE5oxKJigEcyd+xzkUl5Gdf3A==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"10", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"19", "description"=>""}, "commit"=>"Update Vacation", "id"=>"29"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 150], ["updated_at", "2018-01-11 13:27:00.688557"], ["id", 28]]
+  [1m[35m (118.6ms)[0m  [1m[36mcommit transaction[0m
+Completed 401 Unauthorized in 174ms (ActiveRecord: 121.8ms)
+
+
+  
+SystemExit ("2018"):
+  
+app/controllers/vacations_controller.rb:72:in `abort'
+app/controllers/vacations_controller.rb:72:in `update'
+Started PATCH "/vacations/29" for 127.0.0.1 at 2018-01-11 15:27:10 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W2bKlWByvKEeoE6A7Ra2ZDLaIQuvXQtuUcMiGfI3sARqSX+SQ7geMApfqk3rufE5oxKJigEcyd+xzkUl5Gdf3A==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"10", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"19", "description"=>""}, "commit"=>"Update Vacation", "id"=>"29"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 155], ["updated_at", "2018-01-11 13:27:10.771749"], ["id", 28]]
+  [1m[35m (157.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 401 Unauthorized in 211ms (ActiveRecord: 161.4ms)
+
+
+  
+SystemExit ("2018"):
+  
+app/controllers/vacations_controller.rb:72:in `abort'
+app/controllers/vacations_controller.rb:72:in `update'
+Started PATCH "/vacations/29" for 127.0.0.1 at 2018-01-11 15:27:30 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W2bKlWByvKEeoE6A7Ra2ZDLaIQuvXQtuUcMiGfI3sARqSX+SQ7geMApfqk3rufE5oxKJigEcyd+xzkUl5Gdf3A==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"10", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"19", "description"=>""}, "commit"=>"Update Vacation", "id"=>"29"}
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 160], ["updated_at", "2018-01-11 13:27:30.505465"], ["id", 28]]
+  [1m[35m (123.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 401 Unauthorized in 190ms (ActiveRecord: 127.5ms)
+
+
+  
+SystemExit (<ActionController::Parameters {"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"10", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"19", "description"=>""} permitted: false>):
+  
+app/controllers/vacations_controller.rb:72:in `abort'
+app/controllers/vacations_controller.rb:72:in `update'
+Started PATCH "/vacations/29" for 127.0.0.1 at 2018-01-11 15:31:02 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W2bKlWByvKEeoE6A7Ra2ZDLaIQuvXQtuUcMiGfI3sARqSX+SQ7geMApfqk3rufE5oxKJigEcyd+xzkUl5Gdf3A==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"10", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"19", "description"=>""}, "commit"=>"Update Vacation", "id"=>"29"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 165], ["updated_at", "2018-01-11 13:31:02.641522"], ["id", 28]]
+  [1m[35m (128.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 401 Unauthorized in 189ms (ActiveRecord: 132.7ms)
+
+
+  
+SystemExit (Wed, 10 Jan 2018):
+  
+app/controllers/vacations_controller.rb:76:in `abort'
+app/controllers/vacations_controller.rb:76:in `update'
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:34:50 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 28]]
+  Rendered vacations/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 130ms (Views: 101.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/vacations/29/edit" for 127.0.0.1 at 2018-01-11 15:34:55 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (11.8ms)
+  Rendered vacations/edit.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 97ms (Views: 85.0ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/vacations/29" for 127.0.0.1 at 2018-01-11 15:35:09 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+9jYmmmKt5BX/Nw5ISeUd7BRl4ocEoqfhZa9nG4hRStrKJB3rLifQUIbIwMoxi+aG00uMWwa8ccs7MMP5y9sUQ==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"10", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"14", "description"=>""}, "commit"=>"Update Vacation", "id"=>"29"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (25.2ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 170], ["updated_at", "2018-01-11 13:35:09.532424"], ["id", 28]]
+  [1m[35m (77.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 167], ["updated_at", "2018-01-11 13:35:09.641217"], ["id", 28]]
+  [1m[35m (74.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "vacations" SET "days_count" = ?, "end_date" = ?, "updated_at" = ? WHERE "vacations"."id" = ?[0m  [["days_count", 3], ["end_date", "2018-01-14"], ["updated_at", "2018-01-11 13:35:09.720926"], ["id", 29]]
+  [1m[35m (105.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/29
+Completed 302 Found in 309ms (ActiveRecord: 284.9ms)
+
+
+Started GET "/vacations/29" for 127.0.0.1 at 2018-01-11 15:35:09 +0200
+Processing by VacationsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/show.html.erb within layouts/application
+  Rendered vacations/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 71.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:35:14 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 28]]
+  Rendered vacations/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 106ms (Views: 102.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/29/edit" for 127.0.0.1 at 2018-01-11 15:35:17 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (16.9ms)
+  Rendered vacations/edit.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 113ms (Views: 100.3ms | ActiveRecord: 3.4ms)
+
+
+Started PATCH "/vacations/29" for 127.0.0.1 at 2018-01-11 15:35:23 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RJX8ZCUy7HqWlcWynFILAo2bK0djIBq3Hd2PUVDG5c3UZbSJ4ADEq4NyOoiVs7DvJoeS/BMoYe+0p/HC2cjMtw==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"10", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"13", "description"=>""}, "commit"=>"Update Vacation", "id"=>"29"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 170], ["updated_at", "2018-01-11 13:35:23.617238"], ["id", 28]]
+  [1m[35m (95.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 167], ["updated_at", "2018-01-11 13:35:23.718708"], ["id", 28]]
+  [1m[35m (73.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "vacations" SET "end_date" = ?, "updated_at" = ? WHERE "vacations"."id" = ?[0m  [["end_date", "2018-01-13"], ["updated_at", "2018-01-11 13:35:23.796479"], ["id", 29]]
+  [1m[35m (98.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/29
+Completed 302 Found in 293ms (ActiveRecord: 271.1ms)
+
+
+Started GET "/vacations/29" for 127.0.0.1 at 2018-01-11 15:35:23 +0200
+Processing by VacationsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/show.html.erb within layouts/application
+  Rendered vacations/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 69.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:35:25 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 28]]
+  Rendered vacations/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 102ms (Views: 98.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:35:27 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 28]]
+  Rendered vacations/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 87ms (Views: 83.7ms | ActiveRecord: 0.6ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "vacations" WHERE "vacations"."id" = ?[0m  [["id", 29]]
+  [1m[35m (69.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 28]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 28]]
+  [1m[35m (76.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVacation Load (0.1ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 29]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 29]]
+  [1m[35m (76.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mVacation Load (0.1ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 30]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 30]]
+  [1m[35m (101.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "one@test.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "one@test.com"], ["encrypted_password", "$2a$11$U./zES1t6DQtRaJcMFZhwesZSM1aYNsjwfmxuu4/SnD55apA59RrC"], ["created_at", "2018-01-11 13:36:26.270284"], ["updated_at", "2018-01-11 13:36:26.270284"]]
+  [1m[35m (79.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "two@test.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "two@test.com"], ["encrypted_password", "$2a$11$AmRuEM/KQIsSSpGklNR1Y.eCYOsATtgbhNHxo9A6jpvHPVkds7I32"], ["created_at", "2018-01-11 13:36:26.521662"], ["updated_at", "2018-01-11 13:36:26.521662"]]
+  [1m[35m (73.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "three@test.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "three@test.com"], ["encrypted_password", "$2a$11$wwWqdGdkW95X5nhH.D07Pu3qko7eh3fJ4H3iRA3vMJe6ZQtfSMtAy"], ["created_at", "2018-01-11 13:36:26.768805"], ["updated_at", "2018-01-11 13:36:26.768805"]]
+  [1m[35m (80.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:36:32 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 16ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-01-11 15:36:33 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 549ms (Views: 528.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-01-11 15:36:35 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pzk/ItFwT0pTK/lKpYAz1DkB3PYPq9c4Ipra1Qo1osCWFool8rrt20fUHYejL3SJqMl0d6HqFYnCl73pHGVNGA==", "user"=>{"email"=>"one@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "one@test.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-01-11 13:36:35.580884"], ["last_sign_in_at", "2018-01-11 13:36:35.580884"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2018-01-11 13:36:35.582509"], ["id", 31]]
+  [1m[35m (77.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 270ms (ActiveRecord: 78.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:36:35 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 86ms (Views: 68.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:36:38 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (46.4ms)
+  Rendered vacations/new.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 132ms (Views: 109.6ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:36:48 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T10RVE6KTER8LVwBcfOlD1h12PL3AHLvXtf+1Gqmsmj1HAknbREjI4fxvxreMpLy4iXDz27QaPBwVYsxvtRqjg==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"21", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 14], ["updated_at", "2018-01-11 13:36:48.976546"], ["id", 31]]
+  [1m[35m (104.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "vacations" ("start_date", "end_date", "description", "created_at", "updated_at", "user_id", "days_count") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["start_date", "2018-01-11"], ["end_date", "2018-01-21"], ["description", ""], ["created_at", "2018-01-11 13:36:49.091025"], ["updated_at", "2018-01-11 13:36:49.091025"], ["user_id", 31], ["days_count", 7]]
+  [1m[35m (85.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 217ms (ActiveRecord: 192.0ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:36:49 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.1ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 97ms (Views: 93.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/30/edit" for 127.0.0.1 at 2018-01-11 15:37:12 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (12.8ms)
+  Rendered vacations/edit.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 103ms (Views: 94.7ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/vacations/30" for 127.0.0.1 at 2018-01-11 15:37:21 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DjLqw6s9Tyolr7MqO7o6y+Lup3Hd6IYEd+Dp+YVyj+lN5LLVQ8qSnjQruwL4vCj5U0Ce/o9UgeUUTRngq7MLiA==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"13", "description"=>""}, "commit"=>"Update Vacation", "id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 21], ["updated_at", "2018-01-11 13:37:21.643378"], ["id", 31]]
+  [1m[35m (100.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 19], ["updated_at", "2018-01-11 13:37:21.750510"], ["id", 31]]
+  [1m[35m (74.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "vacations" SET "days_count" = ?, "end_date" = ?, "updated_at" = ? WHERE "vacations"."id" = ?[0m  [["days_count", 2], ["end_date", "2018-01-13"], ["updated_at", "2018-01-11 13:37:21.828596"], ["id", 30]]
+  [1m[35m (97.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/30
+Completed 302 Found in 299ms (ActiveRecord: 278.3ms)
+
+
+Started GET "/vacations/30" for 127.0.0.1 at 2018-01-11 15:37:21 +0200
+Processing by VacationsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/show.html.erb within layouts/application
+  Rendered vacations/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 65ms (Views: 60.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:37:35 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 94ms (Views: 89.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/30/edit" for 127.0.0.1 at 2018-01-11 15:38:42 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (7.1ms)
+  Rendered vacations/edit.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 82ms (Views: 78.3ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/vacations/30" for 127.0.0.1 at 2018-01-11 15:38:51 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xll0gsVg3q5qOadevgnFWxvoiuYX2tY0YD/mLAhzip2FjyyULZcDGnu9r3Z9D9dpqkazaUVm0dUDkhY1JrIO/A==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"14", "description"=>""}, "commit"=>"Update Vacation", "id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 21], ["updated_at", "2018-01-11 13:38:51.421271"], ["id", 31]]
+  [1m[35m (101.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 19], ["updated_at", "2018-01-11 13:38:51.528118"], ["id", 31]]
+  [1m[35m (73.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "vacations" SET "end_date" = ?, "updated_at" = ? WHERE "vacations"."id" = ?[0m  [["end_date", "2018-01-14"], ["updated_at", "2018-01-11 13:38:51.605653"], ["id", 30]]
+  [1m[35m (146.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/30
+Completed 302 Found in 339ms (ActiveRecord: 326.7ms)
+
+
+Started GET "/vacations/30" for 127.0.0.1 at 2018-01-11 15:38:51 +0200
+Processing by VacationsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/show.html.erb within layouts/application
+  Rendered vacations/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 60ms (Views: 56.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:38:53 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 88ms (Views: 85.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/30/edit" for 127.0.0.1 at 2018-01-11 15:38:55 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (9.6ms)
+  Rendered vacations/edit.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 86ms (Views: 81.8ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/vacations/30" for 127.0.0.1 at 2018-01-11 15:38:58 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bEqVy3vNXhKgrxtcTq6Y/tZy00OX0OKwXOnTqoIn8AsvnM3dkzqDprErE3SNqIrMZ9zqzMVs5VE/RCOzrOZ0ag==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"15", "description"=>""}, "commit"=>"Update Vacation", "id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 21], ["updated_at", "2018-01-11 13:38:58.974575"], ["id", 31]]
+  [1m[35m (91.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 18], ["updated_at", "2018-01-11 13:38:59.072487"], ["id", 31]]
+  [1m[35m (84.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "vacations" SET "days_count" = ?, "end_date" = ?, "updated_at" = ? WHERE "vacations"."id" = ?[0m  [["days_count", 3], ["end_date", "2018-01-15"], ["updated_at", "2018-01-11 13:38:59.161827"], ["id", 30]]
+  [1m[35m (107.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/30
+Completed 302 Found in 305ms (ActiveRecord: 287.8ms)
+
+
+Started GET "/vacations/30" for 127.0.0.1 at 2018-01-11 15:38:59 +0200
+Processing by VacationsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mVacation Load (0.4ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/show.html.erb within layouts/application
+  Rendered vacations/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 76ms (Views: 71.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:39:01 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 83ms (Views: 79.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/30/edit" for 127.0.0.1 at 2018-01-11 15:39:02 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (8.2ms)
+  Rendered vacations/edit.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 95ms (Views: 89.9ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/vacations/30" for 127.0.0.1 at 2018-01-11 15:39:08 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"45+xrvb/IEWrCDA2YpbF0nIrq0WYeQEDSoDvnmBXEwWgSem4Hgj98bqMOB6hkNfgw4WSysrFBuIpLR+HTpaXZA==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"12", "description"=>""}, "commit"=>"Update Vacation", "id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 21], ["updated_at", "2018-01-11 13:39:08.306637"], ["id", 31]]
+  [1m[35m (103.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 19], ["updated_at", "2018-01-11 13:39:08.417060"], ["id", 31]]
+  [1m[35m (83.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "vacations" SET "days_count" = ?, "end_date" = ?, "updated_at" = ? WHERE "vacations"."id" = ?[0m  [["days_count", 2], ["end_date", "2018-01-12"], ["updated_at", "2018-01-11 13:39:08.506685"], ["id", 30]]
+  [1m[35m (108.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/30
+Completed 302 Found in 318ms (ActiveRecord: 298.1ms)
+
+
+Started GET "/vacations/30" for 127.0.0.1 at 2018-01-11 15:39:08 +0200
+Processing by VacationsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/show.html.erb within layouts/application
+  Rendered vacations/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 69ms (Views: 64.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:39:12 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 101ms (Views: 97.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/30/edit" for 127.0.0.1 at 2018-01-11 15:39:14 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (10.1ms)
+  Rendered vacations/edit.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 101ms (Views: 93.4ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/vacations/30" for 127.0.0.1 at 2018-01-11 15:39:17 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5jR26kUQOsrWLQWd7gMRRjRuah0c4iGM6u5fkfnGsJGl4i78refnfsepDbUtBQN0hcBTkk5eJm2JQ6+I1wc08A==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"11", "description"=>""}, "commit"=>"Update Vacation", "id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 21], ["updated_at", "2018-01-11 13:39:17.554804"], ["id", 31]]
+  [1m[35m (77.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/new
+Completed 302 Found in 90ms (ActiveRecord: 78.9ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:39:17 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (8.2ms)
+  Rendered vacations/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 85ms (Views: 81.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:39:32 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A9V6a4kCFnEQyK8Xv6m3s18SmHbqrY8VKIDPRMD+MXO2ziRn0cx8huQA0ThNksvJw27IWmSN0CoGlft8rTFPnA==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"13", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 19], ["updated_at", "2018-01-11 13:39:32.832133"], ["id", 31]]
+  [1m[35m (78.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "vacations" ("start_date", "end_date", "description", "created_at", "updated_at", "user_id", "days_count") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["start_date", "2018-01-11"], ["end_date", "2018-01-13"], ["description", ""], ["created_at", "2018-01-11 13:39:32.917508"], ["updated_at", "2018-01-11 13:39:32.917508"], ["user_id", 31], ["days_count", 2]]
+  [1m[35m (107.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 199ms (ActiveRecord: 189.3ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:39:33 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 71ms (Views: 68.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:41:15 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 75ms (Views: 72.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/31/edit" for 127.0.0.1 at 2018-01-11 15:41:17 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (11.2ms)
+  Rendered vacations/edit.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 91ms (Views: 86.1ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/vacations/31" for 127.0.0.1 at 2018-01-11 15:41:20 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WSr/8BQcZ1S7WHNOjndkfnuuaLNfEqM8AwD9aGRG1t7WA+by0WWHTNAB7PqxXIjYkqwmd3DSvPePg1U0XYEhnQ==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"13", "description"=>""}, "commit"=>"Update Vacation", "id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 21], ["updated_at", "2018-01-11 13:41:20.199892"], ["id", 31]]
+  [1m[35m (100.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 19], ["updated_at", "2018-01-11 13:41:20.304844"], ["id", 31]]
+  [1m[35m (118.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/31
+Completed 302 Found in 236ms (ActiveRecord: 221.4ms)
+
+
+Started GET "/vacations/31" for 127.0.0.1 at 2018-01-11 15:41:20 +0200
+Processing by VacationsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/show.html.erb within layouts/application
+  Rendered vacations/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 72ms (Views: 67.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:41:22 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 92ms (Views: 88.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/31/edit" for 127.0.0.1 at 2018-01-11 15:41:24 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (9.1ms)
+  Rendered vacations/edit.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 110ms (Views: 106.0ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/vacations/31" for 127.0.0.1 at 2018-01-11 15:41:32 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jt6qgB3sRaJpFByjnvFhOTCwOx5uzujjNCacyeRhKTup97OC2JWlugJNgxeh2o2f2bJ12kEO9yi4pTSV3abeeA==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"11", "description"=>""}, "commit"=>"Update Vacation", "id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 21], ["updated_at", "2018-01-11 13:41:32.482335"], ["id", 31]]
+  [1m[35m (62.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/new
+Completed 302 Found in 74ms (ActiveRecord: 63.9ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:41:32 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (6.5ms)
+  Rendered vacations/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 82ms (Views: 77.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:42:19 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 139ms (Views: 105.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/vacations/31/edit" for 127.0.0.1 at 2018-01-11 15:42:21 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (8.0ms)
+  Rendered vacations/edit.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 101ms (Views: 94.3ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/vacations/31" for 127.0.0.1 at 2018-01-11 15:42:25 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vn0KAoVIe2zz4s7bS44hzOB/rDX1hJUxPqIe5v+nE24xVBMAQDGbdJi7UW90pc1qCX3i8dpEivqyIba6xmDkLQ==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"11", "description"=>""}, "commit"=>"Update Vacation", "id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 23], ["updated_at", "2018-01-11 13:42:25.487822"], ["id", 31]]
+  [1m[35m (109.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/31/edit
+Completed 302 Found in 123ms (ActiveRecord: 114.4ms)
+
+
+Started GET "/vacations/31/edit" for 127.0.0.1 at 2018-01-11 15:42:25 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (16.0ms)
+  Rendered vacations/edit.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 88ms (Views: 81.8ms | ActiveRecord: 2.8ms)
+
+
+Started PATCH "/vacations/31" for 127.0.0.1 at 2018-01-11 15:42:34 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fIqcT+zf9KLh16RhBMRSGVRHTaDyjas/DnxmNClFVB7JkcJDtBGeVRUf2k72/y5jyDsdjHyt9AAgaVIMRIoq8Q==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"11", "description"=>""}, "commit"=>"Update Vacation", "id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 25], ["updated_at", "2018-01-11 13:42:34.039536"], ["id", 31]]
+  [1m[35m (92.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/31/edit
+Completed 302 Found in 105ms (ActiveRecord: 94.9ms)
+
+
+Started GET "/vacations/31/edit" for 127.0.0.1 at 2018-01-11 15:42:34 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (8.6ms)
+  Rendered vacations/edit.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 102ms (Views: 98.3ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/vacations/31" for 127.0.0.1 at 2018-01-11 15:44:26 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iwjClDdGkJu4u7SFxa0l8/AmQOo5IiheAbpi6YWgIVI+E5yYb4j6bExzyqo3llmJbFoQxrcCd2Evr1bR6G9fvQ==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"11", "description"=>""}, "commit"=>"Update Vacation", "id"=>"31"}
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vacations/31/edit
+Completed 302 Found in 48ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/vacations/31/edit" for 127.0.0.1 at 2018-01-11 15:44:27 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (7.3ms)
+  Rendered vacations/edit.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 112ms (Views: 106.1ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/vacations/31" for 127.0.0.1 at 2018-01-11 15:44:30 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"75LLZ1IFdfwybOSydx6xHUglLiCIPF5lmuaThCDcWSRaiZVrCssfC8akmp2FJc1n1Fl+DAYcAVq086e8TRMnyw==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"11", "description"=>""}, "commit"=>"Update Vacation", "id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vacations/31/edit
+Completed 302 Found in 8ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/vacations/31/edit" for 127.0.0.1 at 2018-01-11 15:44:30 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mVacation Load (0.1ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (8.3ms)
+  Rendered vacations/edit.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 105ms (Views: 101.4ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/vacations/31" for 127.0.0.1 at 2018-01-11 15:44:36 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dCvsuKD96rmQCsi4lwt7F4IWQcNsbUJqq2ELUe9ptbzBMLK0+DOATmTCtpdlMAdtHmoR7+JNHVWFdD9pgqbLUw==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"14", "description"=>""}, "commit"=>"Update Vacation", "id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 27], ["updated_at", "2018-01-11 13:44:36.508741"], ["id", 31]]
+  [1m[35m (98.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 25], ["updated_at", "2018-01-11 13:44:36.614275"], ["id", 31]]
+  [1m[35m (85.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "vacations" SET "end_date" = ?, "updated_at" = ? WHERE "vacations"."id" = ?[0m  [["end_date", "2018-01-14"], ["updated_at", "2018-01-11 13:44:36.705080"], ["id", 31]]
+  [1m[35m (105.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/31
+Completed 302 Found in 314ms (ActiveRecord: 293.7ms)
+
+
+Started GET "/vacations/31" for 127.0.0.1 at 2018-01-11 15:44:36 +0200
+Processing by VacationsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/show.html.erb within layouts/application
+  Rendered vacations/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 68ms (Views: 61.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:44:38 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 96ms (Views: 92.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vacations/31/edit" for 127.0.0.1 at 2018-01-11 15:44:40 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (11.4ms)
+  Rendered vacations/edit.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 90ms (Views: 83.6ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/vacations/31" for 127.0.0.1 at 2018-01-11 15:44:46 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qoazE6AijNf9GGof9WWyW5XDB7c4PojYygcR+CciYhQlr6oRZVtsz5ZB9avKTl79fMFJcxf+lxNGhLmkHuWVVw==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"15", "description"=>""}, "commit"=>"Update Vacation", "id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 27], ["updated_at", "2018-01-11 13:44:46.582701"], ["id", 31]]
+  [1m[35m (105.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 24], ["updated_at", "2018-01-11 13:44:46.692004"], ["id", 31]]
+  [1m[35m (84.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "vacations" SET "days_count" = ?, "end_date" = ?, "updated_at" = ? WHERE "vacations"."id" = ?[0m  [["days_count", 3], ["end_date", "2018-01-15"], ["updated_at", "2018-01-11 13:44:46.781897"], ["id", 31]]
+  [1m[35m (108.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/31
+Completed 302 Found in 319ms (ActiveRecord: 300.9ms)
+
+
+Started GET "/vacations/31" for 127.0.0.1 at 2018-01-11 15:44:46 +0200
+Processing by VacationsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mVacation Load (0.8ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/show.html.erb within layouts/application
+  Rendered vacations/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 74ms (Views: 67.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:44:49 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 90ms (Views: 85.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/30/edit" for 127.0.0.1 at 2018-01-11 15:44:58 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (9.8ms)
+  Rendered vacations/edit.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 105ms (Views: 101.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/vacations/30" for 127.0.0.1 at 2018-01-11 15:45:03 +0200
+Processing by VacationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"akHDAcP6eW2GGV6cyWODVRrsLg9WYJp2ZV9hXF4HnO/fWp0NmzQTmnLRILM7WP8vhpB+I9hAxUlLSlVkM8jiAA==", "id"=>"30"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 26], ["updated_at", "2018-01-11 13:45:03.992790"], ["id", 31]]
+  [1m[35m (183.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "vacations" WHERE "vacations"."id" = ?[0m  [["id", 30]]
+  [1m[35m (130.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 327ms (ActiveRecord: 314.6ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:45:04 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 67ms (Views: 63.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/vacations/31" for 127.0.0.1 at 2018-01-11 15:45:09 +0200
+Processing by VacationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AVXRoc2cL/3gOcdKgYboUeMhV3SwQrkUgOGJPozu81u0To+tlVJFChTxuWVzvZQrf10HWD5i5iuu9L0G4SGNtA==", "id"=>"31"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 29], ["updated_at", "2018-01-11 13:45:09.348572"], ["id", 31]]
+  [1m[35m (106.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "vacations" WHERE "vacations"."id" = ?[0m  [["id", 31]]
+  [1m[35m (86.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 204ms (ActiveRecord: 194.9ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:45:09 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.1ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 66ms (Views: 62.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:45:12 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 113ms (Views: 108.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:45:13 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (24.2ms)
+  Rendered vacations/new.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 99ms (Views: 95.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:46:09 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dKspiM/Gc61xHhNKIafySXZoWnbJ3VTl+7P/oO9sSBHO6jH77F0cyorC8FGOZsW0zDhBS1ANTvrVMYpFOx6Q9w==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"2", "end_date(3i)"=>"23", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vacations/new
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:46:09 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (11.6ms)
+  Rendered vacations/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 92ms (Views: 89.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:46:17 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6q8nAQfGUOAf3/EDuVBS2B7jjnQxGupc3cp+JpDWMVNftHkNXwg6F+sXjyxLay6igp/eWL86tWPz30oe/RlPvA==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"22", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 21], ["updated_at", "2018-01-11 13:46:17.442903"], ["id", 31]]
+  [1m[35m (86.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "vacations" ("start_date", "end_date", "description", "created_at", "updated_at", "user_id", "days_count") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["start_date", "2018-01-11"], ["end_date", "2018-01-22"], ["description", ""], ["created_at", "2018-01-11 13:46:17.536773"], ["updated_at", "2018-01-11 13:46:17.536773"], ["user_id", 31], ["days_count", 8]]
+  [1m[35m (96.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 197ms (ActiveRecord: 184.2ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:46:17 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 69ms (Views: 66.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:46:23 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 107ms (Views: 103.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/vacations/32" for 127.0.0.1 at 2018-01-11 15:46:31 +0200
+Processing by VacationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"km2sO8Zjerozjmapdlay7A396a9MbtTSDHW84ENp2UsndvI3nq0QTcdGGIaEbc6WkYG5g8JOi+0iYIjYLqanpA==", "id"=>"32"}
+  [1m[36mVacation Load (0.1ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 29], ["updated_at", "2018-01-11 13:46:31.222631"], ["id", 31]]
+  [1m[35m (131.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "vacations" WHERE "vacations"."id" = ?[0m  [["id", 32]]
+  [1m[35m (77.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 218ms (ActiveRecord: 211.0ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:46:31 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.1ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 73ms (Views: 70.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:46:32 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (14.2ms)
+  Rendered vacations/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 93ms (Views: 90.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:46:39 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sNsw/JDc1OUYWeoDdTnbw3zGtfVLUyDvOFuEcWibJeUKmiiPs0e7guOFCRja+Ow+xpauyNKDOvAW2fGUvOn9Aw==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"2", "end_date(3i)"=>"22", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vacations/new
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:46:39 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (6.9ms)
+  Rendered vacations/new.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 96ms (Views: 94.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:47:49 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J7y5xYC6QXfe8ndSo4VCnXcXE0N7Smh8uEbWLuqDr3CSp+fJ2HQrgCo6CX1Rvj7n62tDb/VqN0OWU+IWh0zRnw==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"2", "end_date(3i)"=>"22", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vacations/new
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:47:49 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (25.9ms)
+  Rendered vacations/new.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 112ms (Views: 109.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:48:00 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0XKUOnh8bSbmCOVI++FZUTgRl+Gbq2Jzc4g48EkRvDpkaco2ILIH0RLAm2cJ2iUrpG3HzRWLPUxdnQzIJN7C1Q==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"2", "end_date(3i)"=>"21", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vacations/new
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:48:00 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (12.7ms)
+  Rendered vacations/new.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 111ms (Views: 108.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:48:50 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N8+EaeVxjrIvlW0hulKroXW4/RXv/B+0QjtGvHO/+qyC1Nplvb/kRdtdEw5Iadfb6cStOWHcQItsLnKEHnCEQw==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"2", "end_date(3i)"=>"22", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Completed 401 Unauthorized in 48ms (ActiveRecord: 2.1ms)
+
+
+  
+SystemExit ([Thu, 11 Jan 2018, Fri, 12 Jan 2018, Mon, 15 Jan 2018, Tue, 16 Jan 2018, Wed, 17 Jan 2018, Thu, 18 Jan 2018, Fri, 19 Jan 2018, Mon, 22 Jan 2018, Tue, 23 Jan 2018, Wed, 24 Jan 2018, Thu, 25 Jan 2018, Fri, 26 Jan 2018, Mon, 29 Jan 2018, Tue, 30 Jan 2018, Wed, 31 Jan 2018, Thu, 01 Feb 2018, Fri, 02 Feb 2018, Mon, 05 Feb 2018, Tue, 06 Feb 2018, Wed, 07 Feb 2018, Thu, 08 Feb 2018, Fri, 09 Feb 2018, Mon, 12 Feb 2018, Tue, 13 Feb 2018, Wed, 14 Feb 2018, Thu, 15 Feb 2018, Fri, 16 Feb 2018, Mon, 19 Feb 2018, Tue, 20 Feb 2018, Wed, 21 Feb 2018, Thu, 22 Feb 2018]):
+  
+app/controllers/vacations_controller.rb:45:in `abort'
+app/controllers/vacations_controller.rb:45:in `create'
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:49:06 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N8+EaeVxjrIvlW0hulKroXW4/RXv/B+0QjtGvHO/+qyC1Nplvb/kRdtdEw5Iadfb6cStOWHcQItsLnKEHnCEQw==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"2", "end_date(3i)"=>"22", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Completed 401 Unauthorized in 50ms (ActiveRecord: 4.8ms)
+
+
+  
+SystemExit (31):
+  
+app/controllers/vacations_controller.rb:45:in `abort'
+app/controllers/vacations_controller.rb:45:in `create'
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:52:47 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N8+EaeVxjrIvlW0hulKroXW4/RXv/B+0QjtGvHO/+qyC1Nplvb/kRdtdEw5Iadfb6cStOWHcQItsLnKEHnCEQw==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"2", "end_date(3i)"=>"22", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Completed 401 Unauthorized in 60ms (ActiveRecord: 2.3ms)
+
+
+  
+SystemExit ([Thu, 11 Jan 2018, Fri, 12 Jan 2018, Mon, 15 Jan 2018, Tue, 16 Jan 2018, Wed, 17 Jan 2018, Thu, 18 Jan 2018, Fri, 19 Jan 2018, Mon, 22 Jan 2018, Tue, 23 Jan 2018, Wed, 24 Jan 2018, Thu, 25 Jan 2018, Fri, 26 Jan 2018, Mon, 29 Jan 2018, Tue, 30 Jan 2018, Wed, 31 Jan 2018, Thu, 01 Feb 2018, Fri, 02 Feb 2018, Mon, 05 Feb 2018, Tue, 06 Feb 2018, Wed, 07 Feb 2018, Thu, 08 Feb 2018, Fri, 09 Feb 2018, Mon, 12 Feb 2018, Tue, 13 Feb 2018, Wed, 14 Feb 2018, Thu, 15 Feb 2018, Fri, 16 Feb 2018, Mon, 19 Feb 2018, Tue, 20 Feb 2018, Wed, 21 Feb 2018, Thu, 22 Feb 2018]):
+  
+app/controllers/vacations_controller.rb:45:in `abort'
+app/controllers/vacations_controller.rb:45:in `create'
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:54:16 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N8+EaeVxjrIvlW0hulKroXW4/RXv/B+0QjtGvHO/+qyC1Nplvb/kRdtdEw5Iadfb6cStOWHcQItsLnKEHnCEQw==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"2", "end_date(3i)"=>"21", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Completed 401 Unauthorized in 43ms (ActiveRecord: 2.5ms)
+
+
+  
+SystemExit (30):
+  
+app/controllers/vacations_controller.rb:45:in `abort'
+app/controllers/vacations_controller.rb:45:in `create'
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:54:25 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N8+EaeVxjrIvlW0hulKroXW4/RXv/B+0QjtGvHO/+qyC1Nplvb/kRdtdEw5Iadfb6cStOWHcQItsLnKEHnCEQw==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"2", "end_date(3i)"=>"22", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+SystemExit (31):
+  
+app/controllers/vacations_controller.rb:45:in `abort'
+app/controllers/vacations_controller.rb:45:in `create'
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:54:55 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 100ms (Views: 70.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:54:56 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (8.2ms)
+  Rendered vacations/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 98ms (Views: 79.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:55:30 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ja8lGZLR/qIjoEdF0AmvP+wKY6DRqMdE7frob76epLaf7j1qsUqRxdh8pF5/yJjCVlp4nUh43VvDeJ2Kaux8UA==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"2", "end_date(3i)"=>"20", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 0], ["updated_at", "2018-01-11 13:55:30.363861"], ["id", 31]]
+  [1m[35m (96.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "vacations" ("start_date", "end_date", "description", "created_at", "updated_at", "user_id", "days_count") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["start_date", "2018-01-11"], ["end_date", "2018-02-20"], ["description", ""], ["created_at", "2018-01-11 13:55:30.468840"], ["updated_at", "2018-01-11 13:55:30.468840"], ["user_id", 31], ["days_count", 29]]
+  [1m[35m (69.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 186ms (ActiveRecord: 168.1ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:55:30 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 74ms (Views: 71.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:55:34 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:55:34 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 87ms (Views: 83.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:55:35 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:55:35 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 86ms (Views: 83.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/33/edit" for 127.0.0.1 at 2018-01-11 15:55:53 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (13.1ms)
+  Rendered vacations/edit.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 93ms (Views: 79.6ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/vacations/33" for 127.0.0.1 at 2018-01-11 15:55:58 +0200
+Processing by VacationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jRN2g4uyd7uPjXkDnhv0O8WGJzNaRqGg5cqjydfgtKTxKY4hiaOQJOiRmWMYsRpla2Y/2aQwMSCmV5po5Rpg9Q==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"2", "end_date(3i)"=>"19", "description"=>""}, "commit"=>"Update Vacation", "id"=>"33"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 29], ["updated_at", "2018-01-11 13:55:58.644137"], ["id", 31]]
+  [1m[35m (82.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 1], ["updated_at", "2018-01-11 13:55:58.731879"], ["id", 31]]
+  [1m[35m (85.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "vacations" SET "days_count" = ?, "end_date" = ?, "updated_at" = ? WHERE "vacations"."id" = ?[0m  [["days_count", 28], ["end_date", "2018-02-19"], ["updated_at", "2018-01-11 13:55:58.822106"], ["id", 33]]
+  [1m[35m (63.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations/33
+Completed 302 Found in 251ms (ActiveRecord: 234.5ms)
+
+
+Started GET "/vacations/33" for 127.0.0.1 at 2018-01-11 15:55:58 +0200
+Processing by VacationsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/show.html.erb within layouts/application
+  Rendered vacations/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 73ms (Views: 65.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/vacations/33/edit" for 127.0.0.1 at 2018-01-11 15:56:03 +0200
+Processing by VacationsController#edit as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/edit.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (27.8ms)
+  Rendered vacations/edit.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 101ms (Views: 95.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-01-11 15:56:29 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 93ms (Views: 89.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:56:37 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (10.5ms)
+  Rendered vacations/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 93ms (Views: 89.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:56:42 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3MFRbcnKitEdycSvx+psGAvLNgrXiImaIo4KuCKSucpmgEke6lHltuYVJ7RoK1vlsZstN05Yk4UMDH9d9uBhLA==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"12", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vacations/new
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:56:42 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (10.6ms)
+  Rendered vacations/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 98ms (Views: 95.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:56:50 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DuuYiK8F/Q1UEMdji+5s9UAXx8yUFqKKWssMebvoTj678MaE98uX+qDYuUx51RCP3GuX4Bo2/bV03jhB1icw0Q==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"12", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vacations/new
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:56:50 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (7.2ms)
+  Rendered vacations/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 80ms (Views: 77.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:57:26 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tO/LJP8lOjqCJTB3+eX5Vo0XAPSze5FdEJEV1SjUkY8B9JUop+tQzXbtTlgL3oUsEWtQ2D1bzmI+hCHtRRvvYA==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"12", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Completed 401 Unauthorized in 42ms (ActiveRecord: 2.4ms)
+
+
+  
+SystemExit (2):
+  
+app/controllers/vacations_controller.rb:48:in `abort'
+app/controllers/vacations_controller.rb:48:in `create'
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:57:37 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tO/LJP8lOjqCJTB3+eX5Vo0XAPSze5FdEJEV1SjUkY8B9JUop+tQzXbtTlgL3oUsEWtQ2D1bzmI+hCHtRRvvYA==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"11", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vacations/new
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:57:37 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (11.3ms)
+  Rendered vacations/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 134ms (Views: 131.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:58:35 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yOFNcjG5/mhSuwLl8jAOq6/a7n9jcjn8lnAGV8Oz3659+hN+aXeUn6ZzfMoAC3LRM6a+U+1SZsO4ZTJvrnyhQQ==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"11", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vacations/new
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:58:35 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (11.1ms)
+  Rendered vacations/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 105ms (Views: 102.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:58:50 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bK5SAS7G6Q5ZQcEeX4/XUnKR+zCpOdy3NLusfA8m8vbZtQwNdgiD+a2JvzGttKso7u2rHCcZg4garphEYumMGQ==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"11", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Redirected to http://localhost:3000/vacations/new
+Completed 302 Found in 39ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 15:58:51 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (10.7ms)
+  Rendered vacations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 97ms (Views: 94.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 15:59:25 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hz1drt59mv+ELX2jCEQ8sYAPeredngOQxFggjqiZk7YyJgOihrPwCHDlA4z6f0DLHHMqmxO+XK/qTRS2xVbtWQ==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"11", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 0], ["updated_at", "2018-01-11 13:59:25.788241"], ["id", 31]]
+  [1m[35m (127.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vacations" ("start_date", "end_date", "description", "created_at", "updated_at", "user_id", "days_count") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["start_date", "2018-01-11"], ["end_date", "2018-01-11"], ["description", ""], ["created_at", "2018-01-11 13:59:25.922726"], ["updated_at", "2018-01-11 13:59:25.922726"], ["user_id", 31], ["days_count", 1]]
+  [1m[35m (84.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 271ms (ActiveRecord: 218.1ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 15:59:26 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 70ms (Views: 64.1ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/vacations/34" for 127.0.0.1 at 2018-01-11 16:00:42 +0200
+Processing by VacationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8PtGj0qV3fnLE9GceV0epr4Z0sDlI+LT/L8JXJGeoKpF4BiDElu3Dj/br7OLZmLcImWC7GsDvezSqj1k/FHeRQ==", "id"=>"34"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 1], ["updated_at", "2018-01-11 14:00:42.752155"], ["id", 31]]
+  [1m[35m (107.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "vacations" WHERE "vacations"."id" = ?[0m  [["id", 34]]
+  [1m[35m (75.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 229ms (ActiveRecord: 186.9ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 16:00:42 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 72ms (Views: 67.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 16:00:44 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (34.5ms)
+  Rendered vacations/new.html.erb within layouts/application (38.2ms)
+Completed 200 OK in 107ms (Views: 104.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 16:00:46 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6ojWJfKVfhgO014OlbdPS+E6odVLyJamRv94uSFPXztQyc5W0Q4Rf/UPvRU6dni2W2q66NIYjLlofQ1c9T2H3Q==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"11", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 0], ["updated_at", "2018-01-11 14:00:46.429472"], ["id", 31]]
+  [1m[35m (162.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "vacations" ("start_date", "end_date", "description", "created_at", "updated_at", "user_id", "days_count") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["start_date", "2018-01-11"], ["end_date", "2018-01-11"], ["description", ""], ["created_at", "2018-01-11 14:00:46.599612"], ["updated_at", "2018-01-11 14:00:46.599612"], ["user_id", 31], ["days_count", 1]]
+  [1m[35m (105.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 285ms (ActiveRecord: 271.3ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 16:00:46 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 69ms (Views: 65.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/vacations/35" for 127.0.0.1 at 2018-01-11 16:00:58 +0200
+Processing by VacationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6n/aaAr7GMkzsWqCbp/lmmdR1CvJXfWJz6vLOApdMwxfZIRkUjVyPsd5FK2cpJng+y2EB0d9qrbhvv8AZ5JN4w==", "id"=>"35"}
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT  "vacations".* FROM "vacations" WHERE "vacations"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 1], ["updated_at", "2018-01-11 14:00:58.288775"], ["id", 31]]
+  [1m[35m (104.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "vacations" WHERE "vacations"."id" = ?[0m  [["id", 35]]
+  [1m[35m (73.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 225ms (ActiveRecord: 181.3ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 16:00:58 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.3ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 88ms (Views: 83.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vacations/new" for 127.0.0.1 at 2018-01-11 16:00:59 +0200
+Processing by VacationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/new.html.erb within layouts/application
+  Rendered vacations/_form.html.erb (17.9ms)
+  Rendered vacations/new.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 128ms (Views: 125.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/vacations" for 127.0.0.1 at 2018-01-11 16:01:00 +0200
+Processing by VacationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WrstcF2fYaTEUqEnUvRDnQIF0NAF9ZolqKIF5WuLvaXg+jUDfgQOwz+OQjz9NXRguFXL7ZwlgDqGIHAAv/llQw==", "vacation"=>{"start_date(1i)"=>"2018", "start_date(2i)"=>"1", "start_date(3i)"=>"11", "end_date(1i)"=>"2018", "end_date(2i)"=>"1", "end_date(3i)"=>"11", "description"=>""}, "commit"=>"Create Vacation"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[33mUPDATE "users" SET "balance" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["balance", 0], ["updated_at", "2018-01-11 14:01:00.685742"], ["id", 31]]
+  [1m[35m (339.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "vacations" ("start_date", "end_date", "description", "created_at", "updated_at", "user_id", "days_count") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["start_date", "2018-01-11"], ["end_date", "2018-01-11"], ["description", ""], ["created_at", "2018-01-11 14:01:01.032002"], ["updated_at", "2018-01-11 14:01:01.032002"], ["user_id", 31], ["days_count", 1]]
+  [1m[35m (541.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/vacations
+Completed 302 Found in 895ms (ActiveRecord: 883.3ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 16:01:01 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 71ms (Views: 66.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/vacations" for 127.0.0.1 at 2018-01-11 16:02:33 +0200
+Processing by VacationsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering vacations/index.html.erb within layouts/application
+  [1m[36mVacation Load (0.2ms)[0m  [1m[34mSELECT "vacations".* FROM "vacations" WHERE "vacations"."user_id" = ?[0m  [["user_id", 31]]
+  Rendered vacations/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 103ms (Views: 76.0ms | ActiveRecord: 2.2ms)
+
+

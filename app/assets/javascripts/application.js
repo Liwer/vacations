@@ -14,5 +14,5 @@
 //= require twitter/bootstrap
 //= require rails-ujs
 //= require turbolinks
-//= require moment.min
+//= require moment
 //= require_tree .
