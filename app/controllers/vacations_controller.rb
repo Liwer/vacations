@@ -19,6 +19,10 @@ class VacationsController < ApplicationController
   # GET /vacations/new
   def new
     @vacation = Vacation.new
+    if current_user.balance == 0
+      flash[:notice] = "Sorry, your vacation balance is 0" 
+      redirect_to vacations_path
+    end
   end
 
   # GET /vacations/1/edit
@@ -30,48 +34,77 @@ class VacationsController < ApplicationController
   def create
     @vacation = Vacation.new(vacation_params)
     @vacation.user_id = current_user.id
+    @weekday_numbers = [1,2,3,4,5]
+    @business_days = (@vacation.start_date..@vacation.end_date).select{ |d| @weekday_numbers.include?( d.wday ) }
+
+
     if @vacation.end_date <= @vacation.start_date
-      flash[:notice] = "Dates are not selected correctly"
-      redirect_to vacations_path
+      flash[:alert] = "Dates are not selected correctly"
+      redirect_to new_vacation_path
     else   
-      @vacation.days_count = @vacation.end_date.mjd - @vacation.start_date.mjd
-    if  @vacation.days_count > current_user.balance || current_user.balance < 1
-      flash[:notice] = "Your balance is less than the specified number of days"
-      redirect_to vacations_path
-    else
-    current_user.balance = current_user.balance - @vacation.days_count
-      current_user.save
-    respond_to do |format|
-      if @vacation.save
-        format.html { redirect_to @vacation, notice: 'Vacation was successfully created.' }
-        format.json { render :show, status: :created, location: @vacation }
+      @vacation.days_count = @business_days.length
+    
+      if  @vacation.days_count > current_user.balance || current_user.balance < 1
+        flash[:alert] = "Your balance is less than the specified number of days"
+        redirect_to new_vacation_path
       else
-        format.html { render :new }
-        format.json { render json: @vacation.errors, status: :unprocessable_entity }
+        current_user.balance = current_user.balance - @vacation.days_count
+        current_user.save
+        
+        respond_to do |format|
+          if @vacation.save
+            format.html { redirect_to vacations_path, notice: 'Vacation was successfully created.' }
+            format.json { render :show, status: :created, location: @vacation }
+          else
+            format.html { render :new }
+            format.json { render json: @vacation.errors, status: :unprocessable_entity }
+          end
+        end
       end
-    end
-    end
     end
   end
 
   # PATCH/PUT /vacations/1
   # PATCH/PUT /vacations/1.json
   def update
-    respond_to do |format|
-      if @vacation.update(vacation_params)
-        format.html { redirect_to @vacation, notice: 'Vacation was successfully updated.' }
-        format.json { render :show, status: :ok, location: @vacation }
+    current_user.balance = current_user.balance + @vacation.days_count
+    current_user.save
+    abort params[:vacation]["start_date(1i)"].inspect
+    @weekday_numbers = [1,2,3,4,5]
+    @business_days = (@vacation.start_date..@vacation.end_date).select{ |d| @weekday_numbers.include?( d.wday ) }
+
+    if @vacation.end_date <= @vacation.start_date
+      flash[:alert] = "Dates are not selected correctly"
+      redirect_to new_vacation_path
+    else   
+      abort @business_days.length.inspect
+      @vacation.days_count = @business_days.length
+         
+      if  @vacation.days_count > current_user.balance || current_user.balance < 1
+        flash[:alert] = "Your balance is less than the specified number of days"
+        redirect_to new_vacation_path
       else
-        format.html { render :edit }
-        format.json { render json: @vacation.errors, status: :unprocessable_entity }
+        current_user.balance = current_user.balance - @vacation.days_count
+        current_user.save
+
+      respond_to do |format|
+        if @vacation.update(vacation_params)
+          format.html { redirect_to @vacation, notice: 'Vacation was successfully updated.' }
+          format.json { render :show, status: :ok, location: @vacation }
+        else
+          format.html { render :edit }
+          format.json { render json: @vacation.errors, status: :unprocessable_entity }
+        end
       end
     end
   end
+end
 
   # DELETE /vacations/1
   # DELETE /vacations/1.json
   def destroy
-
+    current_user.balance = current_user.balance + @vacation.days_count
+    current_user.save
     @vacation.destroy
     respond_to do |format|
       format.html { redirect_to vacations_url, notice: 'Vacation was successfully destroyed.' }

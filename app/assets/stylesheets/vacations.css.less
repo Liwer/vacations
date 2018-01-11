@@ -22,10 +22,11 @@ header {
     }
 }
 
-section.newVacation {
+section.newVacation, section.editVacation {
     .newInnerWrapper {
-        width: 50%;
-        margin-left: 25%;
+        margin: 0 auto;
+        max-width: 650px;
+
         h1 {
             text-align: center;
             padding-bottom: 30px;
@@ -34,11 +35,14 @@ section.newVacation {
             font-weight: 100;
             font-size: 18px;
         }
-        button {
-            padding: 16px;
+        textarea.form-control {
+            width: 90%;
         }
         .formSub {
             margin-top: 25px;
+        }
+        .col-md-6 {
+            padding: 0px;
         }
     }
 }

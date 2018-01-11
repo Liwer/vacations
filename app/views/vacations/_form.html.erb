@@ -1,13 +1,16 @@
-  <div class="row">
-      <%= simple_form_for @vacation, html: { class: 'form-group' } do |f| %>
-      <div class='row'>
-        <div class="col-xs-6">
-          <%= f.input :start_date, as: :date_picker, placeholder: "dd/mm/yyyy" %>
-        </div>
-        <div class="col-xs-6">
-          <%= f.input :end_date, as: :date_picker, placeholder: "dd/mm/yyyy"%>
-        </div>  
+<% flash.each do |key, value| %>
+      <div class="<%= flash_class(key) %>">
+            <%= value %>
       </div>
+<% end %>
+  <div class="form-group">
+      <%= simple_form_for @vacation do |f| %>
+        <div class="col-md-6 datepicker">
+          <%= f.input :start_date, class: "datepicker" %>
+        </div>
+        <div class="col-md-6">
+          <%= f.input :end_date, placeholder: "dd/mm/yyyy" %>
+        </div>  
       <h4 class="control-label">Description</h4>
       <%= f.text_area :description, class: 'form-control' %>
       <%= f.button :submit, class: 'formSub' %>
