@@ -2,17 +2,25 @@
 	<div class="indexWrapper">
 		<p id="notice"><%= notice %></p>
 		<div class="row">
-			<h1>Your vacations list</h1>
+			<% if @vacations != []%>
+				<h1>Your vacations list</h1>
+			<% else %>
+				<h3>You have not created vacations</h3>
+			<%end%>
 		</div>
 		<div class="row">
 			<ul class="list-group">
-			  <% @vacations.each do |vacation|%>
+			  <% @vacations.reverse_each do |vacation|%>
 			      <li class="list-group-item"> 
-			      	Start of vacation: <%= vacation.start_date%> - End of vacation: <%= vacation.end_date%>
-					<div class="btn-group" role="group" aria-label="...">
-				    	<%= link_to 'Edit', edit_vacation_path(vacation), :class => "btn btn-default" %>
-				    	<%= link_to 'Destroy', vacation, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-default" %>
-				    </div>	
+				      	Start of vacation: <%= vacation.start_date%> - End of vacation: <%= vacation.end_date%>
+						<div class="btn-group" role="group" aria-label="...">
+					    	<%= link_to 'Edit', edit_vacation_path(vacation), :class => "btn btn-primary" %>
+					    	<%= link_to 'Destroy', vacation, method: :delete, data: { confirm: 'Are you sure?'}, :class => "btn btn-mini btn-danger", rel: "nofollow" %>
+					    </div>
+						<br>
+						<% unless vacation.description == ""%>
+							<div class="description"> <p>Description: <%= vacation.description %></p></div>
+						<%end%>	
 			      </li> 
 			    
 			  <%end%>
