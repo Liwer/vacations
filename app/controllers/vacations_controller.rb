@@ -1,4 +1,5 @@
 class VacationsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_owner, only: [:show, :edit, :update, :destroy]
 
   # GET /vacations
@@ -9,6 +10,9 @@ class VacationsController < ApplicationController
     else
       redirect_to  new_user_session_path
     end
+
+    current_user.calculate
+
   end
 
   # GET /vacations/1
@@ -45,13 +49,10 @@ class VacationsController < ApplicationController
       @vacation.days_count = @business_days.length
     
       if  @vacation.days_count > current_user.balance || current_user.balance < 1
-        abort @vacation.days_count.inspect
         flash[:alert] = "Your balance is less than the specified number of days"
         redirect_to new_vacation_path
       else
-        current_user.balance = current_user.balance - @vacation.days_count
-        current_user.save
-        
+        current_user.calculate
         respond_to do |format|
           if @vacation.save
             format.html { redirect_to vacations_path, notice: 'Vacation was successfully created.' }
@@ -75,37 +76,32 @@ class VacationsController < ApplicationController
     @weekday_numbers = [1,2,3,4,5]
     @business_days = (@start_date..@end_date).select{ |d| @weekday_numbers.include?( d.wday ) }
 
-    if @end_date <= @start_date
+    if @end_date < @start_date
       flash[:alert] = "Dates are not selected correctly"
       redirect_to edit_vacation_path
     else   
-      current_user.balance = current_user.balance + @vacation.days_count
-      current_user.save
       @vacation.days_count = @business_days.length
          
       if  @vacation.days_count > current_user.balance || current_user.balance < 1
         flash[:alert] = "Your balance is less than the specified number of days"
         redirect_to edit_vacation_path
       else
-        current_user.balance = current_user.balance - @vacation.days_count
-        current_user.save
-
-      respond_to do |format|
-        if @vacation.update(vacation_params)
-          format.html { redirect_to vacations_path, notice: 'Vacation was successfully updated.' }
-        else
-          format.html { render :edit }
-        end
+        current_user.calculate
+        respond_to do |format|
+          if @vacation.update(vacation_params)
+            format.html { redirect_to vacations_path, notice: 'Vacation was successfully updated.' }
+          else
+            format.html { render :edit }
+          end
+       end
       end
     end
   end
-end
 
   # DELETE /vacations/1
   # DELETE /vacations/1.json
   def destroy
-    current_user.balance = current_user.balance + @vacation.days_count
-    current_user.save
+    current_user.calculate
     @vacation.destroy
     respond_to do |format|
       format.html { redirect_to vacations_url, notice: 'Vacation was successfully destroyed.' }
