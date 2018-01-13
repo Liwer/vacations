@@ -7,6 +7,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+#notice {
+    text-align: center;
+}
 
 
 header {
@@ -22,29 +25,28 @@ header {
     a.login {
         float: right;
     }
-    a.newVacation {
-        margin-top: 0;
-        margin-left: 20px;
-    }
+
+}
+
+section.logIn {
+    margin: 0 auto;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 23px;
 }
 
 section.indexVacation {
     .indexWrapper{
         margin: 0 auto;
-        max-width: 532px;
+        max-width: 1000px;
 
-        h1, h3 {
+        h1 {
             text-align: center;
             padding-bottom: 25px;
         }
-
-        ul.list-group {
-            .btn-group{
-                margin-left: 30px;    
-             }
-             .description {
-                width: inherit;
-             }
+        .popover-content {
+            word-wrap: break-word;
         }
     }
 }

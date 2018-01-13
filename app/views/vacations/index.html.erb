@@ -1,4 +1,5 @@
 <section class="indexVacation">
+    <%= link_to 'New Vacation', new_vacation_path, :class => "btn btn-primary newVacation"  %>
 	<div class="indexWrapper">
 		<p id="notice"><%= notice %></p>
 		<div class="row">
@@ -9,22 +10,44 @@
 			<%end%>
 		</div>
 		<div class="row">
-			<ul class="list-group">
-			  <% @vacations.reverse_each do |vacation|%>
-			      <li class="list-group-item"> 
-				      	Start of vacation: <%= vacation.start_date%> - End of vacation: <%= vacation.end_date%>
-						<div class="btn-group" role="group" aria-label="...">
-					    	<%= link_to 'Edit', edit_vacation_path(vacation), :class => "btn btn-primary" %>
-					    	<%= link_to 'Destroy', vacation, method: :delete, data: { confirm: 'Are you sure?'}, :class => "btn btn-mini btn-danger", rel: "nofollow" %>
-					    </div>
-						<br>
-						<% unless vacation.description == ""%>
-							<div class="description"> <p>Description: <%= vacation.description %></p></div>
-						<%end%>	
-			      </li> 
-			    
-			  <%end%>
-			</ul>
+		<div class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>#</th>
+			    <th>Start of vacation</th>
+			    <th>End of vacation</th> 
+			    <th>Options</th> 
+		  	</tr>
+	  	</thead>
+  		<% @vacations.reverse.each_with_index do |vacation, index|%>
+			<tbody>
+				<tr>
+					<td> <%= index +1 %></td>
+					<td><%= vacation.start_date%></td>
+					<td><%= vacation.end_date%></td>
+					<td>
+						<div class="btn-group">
+						      		<% unless vacation.description == ""%>
+ 										<button class="btn btn-primary pop" data-placement="auto-top" data-toggle="popover" data-content="<%= vacation.description %>">Description</button>
+									<%end%>
+						    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Options<span class="caret"></span></button>
+						    	<ul class="dropdown-menu" role="menu">
+						    		<li>
+										<%= link_to 'Edit', edit_vacation_path(vacation) %>
+									</li>
+								    <li>
+								  	  <%= link_to 'Destroy', vacation, method: :delete, data: { confirm: 'Are you sure?'},  rel: "nofollow" %>
+								    </li>
+    							</ul>
+  						</div>		    		
+					</td>
+				</tr>
+			</tbody>
+  		<%end%>
+	</table>
+</div>
 		</div>
 	</div>
 </section>
+
