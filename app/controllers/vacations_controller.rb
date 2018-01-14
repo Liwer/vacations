@@ -10,9 +10,7 @@ class VacationsController < ApplicationController
     else
       redirect_to  new_user_session_path
     end
-
     current_user.calculate
-
   end
 
   # GET /vacations/1
@@ -38,16 +36,12 @@ class VacationsController < ApplicationController
   def create
     @vacation = Vacation.new(vacation_params)
     @vacation.user_id = current_user.id
-    @weekday_numbers = [1,2,3,4,5]
-    @business_days = (@vacation.start_date..@vacation.end_date).select{ |d| @weekday_numbers.include?( d.wday ) }
-
-
+   
     if @vacation.end_date < @vacation.start_date
       flash[:alert] = "Dates are not selected correctly"
       redirect_to new_vacation_path
     else   
-      @vacation.days_count = @business_days.length
-    
+      @vacation.days_count = calculate_business_days
       if  @vacation.days_count > current_user.balance || current_user.balance < 1
         flash[:alert] = "Your balance is less than the specified number of days"
         redirect_to new_vacation_path
@@ -67,20 +61,11 @@ class VacationsController < ApplicationController
   # PATCH/PUT /vacations/1
   # PATCH/PUT /vacations/1.json
   def update
-    @start_date = Date.new(params[:vacation]["start_date(1i)"].to_i, 
-                        params[:vacation]["start_date(2i)"].to_i,
-                        params[:vacation]["start_date(3i)"].to_i)
-    @end_date = Date.new(params[:vacation]["end_date(1i)"].to_i, 
-                        params[:vacation]["end_date(2i)"].to_i,
-                        params[:vacation]["end_date(3i)"].to_i)
-    @weekday_numbers = [1,2,3,4,5]
-    @business_days = (@start_date..@end_date).select{ |d| @weekday_numbers.include?( d.wday ) }
-
-    if @end_date < @start_date
+    if vacation_params[:end_date] < vacation_params[:start_date]
       flash[:alert] = "Dates are not selected correctly"
       redirect_to edit_vacation_path
     else   
-      @vacation.days_count = @business_days.length
+      @vacation.days_count = calculate_business_days
          
       if  @vacation.days_count > current_user.balance || current_user.balance < 1
         flash[:alert] = "Your balance is less than the specified number of days"
@@ -121,5 +106,11 @@ class VacationsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def vacation_params
       params.require(:vacation).permit(:start_date, :end_date, :description, :user_id, :days_count)
+    end
+
+    def calculate_business_days
+      @weekday_numbers = [1,2,3,4,5]
+      @business_days = (vacation_params[:start_date].to_datetime..vacation_params[:end_date].to_datetime).select{ |d| @weekday_numbers.include?( d.wday ) }
+      return @business_days.length
     end
 end
