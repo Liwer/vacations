@@ -72,21 +72,26 @@ class VacationsController < ApplicationController
   # PATCH/PUT /vacations/1.json
   def update
     @vacation.days_count = calculate_business_days
-    if  @vacation.days_count > current_user.balance || current_user.balance < 1
-      flash[:alert] = "Your balance is less than the specified number of days"
+    if vacation_params[:start_date] > vacation_params[:end_date]
+      flash[:notice] = "Dates are not selected correctly"
       redirect_to edit_vacation_path
     else
-      current_user.calculate
-       
-      unless validate_vacation_date(vacation_params, "update")
-          flash[:notice] = "For these dates, already scheduled vacation, please choose other dates"
-          redirect_to edit_vacation_path
+      if  @vacation.days_count > current_user.balance || current_user.balance < 1
+        flash[:alert] = "Your balance is less than the specified number of days"
+        redirect_to edit_vacation_path
       else
-        respond_to do |format|
-          if @vacation.update(vacation_params)
-            format.html { redirect_to vacations_path, notice: 'Vacation was successfully updated.' }
-          else
-            format.html { render :edit }
+        current_user.calculate
+         
+        unless validate_vacation_date(vacation_params, "update")
+            flash[:notice] = "For these dates, already scheduled vacation, please choose other dates"
+            redirect_to edit_vacation_path
+        else
+          respond_to do |format|
+            if @vacation.update(vacation_params)
+              format.html { redirect_to vacations_path, notice: 'Vacation was successfully updated.' }
+            else
+              format.html { render :edit }
+            end
           end
         end
       end
