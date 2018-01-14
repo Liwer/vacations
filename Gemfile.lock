@@ -46,8 +46,10 @@ GEM
     bcrypt (3.1.11-x64-mingw32)
     bcrypt (3.1.11-x86-mingw32)
     bindex (0.5.0)
-    bootstrap-datepicker-rails (1.7.1.1)
-      railties (>= 3.0)
+    bootstrap-sass (3.2.0.2)
+      sass (~> 3.2)
+    bootstrap3-datetimepicker-rails (4.17.47)
+      momentjs-rails (>= 2.8.1)
     builder (3.2.3)
     byebug (9.1.0)
     capybara (2.17.0)
@@ -105,7 +107,6 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.0)
       mini_mime (>= 0.1.1)
-    md-date-time-picker-rails (2.1.2)
     method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
@@ -240,7 +241,8 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
-  bootstrap-datepicker-rails (~> 1.6, >= 1.6.1.1)
+  bootstrap-sass (= 3.2.0.2)
+  bootstrap3-datetimepicker-rails (~> 4.17.47)
   byebug
   capybara (~> 2.13)
   devise (~> 4.2)
@@ -249,7 +251,6 @@ DEPENDENCIES
   jquery-rails (~> 4.3, >= 4.3.1)
   less-rails (~> 2.7, >= 2.7.1)
   listen (>= 3.0.5, < 3.2)
-  md-date-time-picker-rails (~> 2.1, >= 2.1.2)
   momentjs-rails (>= 2.9.0)
   puma (~> 3.7)
   rails (~> 5.1.4)

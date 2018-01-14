@@ -60,11 +60,12 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 gem 'twitter-bootstrap-rails', '~> 4.0'
 
-
-gem 'momentjs-rails', '>= 2.9.0'
-
-
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
+gem 'bootstrap-sass', '3.2.0.2'
+
 
