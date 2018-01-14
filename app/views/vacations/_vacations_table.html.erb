@@ -5,7 +5,8 @@
 				<tr>
 					<th>#</th>
 				    <th>Start of vacation</th>
-				    <th>End of vacation</th> 
+				    <th>End of vacation</th>
+				    <th>Count of days</th>
 				    <th>Options</th> 
 			  	</tr>
 		  	</thead>
@@ -15,11 +16,9 @@
 						<td> <%= index +1 %></td>
 						<td><%= vacation.start_date%></td>
 						<td><%= vacation.end_date%></td>
+						<td><%= vacation.days_count%></td>
 						<td>
-							<div class="btn-group">
-							    <% unless vacation.description == ""%>
-	 								<button class="btn btn-primary pop" data-placement="auto-top" data-toggle="popover" data-content="<%= vacation.description %>">Description</button>
-								<%end%>
+							<!-- <div class="btn-group"> -->
 							    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Options<span class="caret"></span></button>
 							    <ul class="dropdown-menu" role="menu">
 							    	<li>
@@ -29,7 +28,10 @@
 									  	<%= link_to 'Destroy', vacation, method: :delete, data: { confirm: 'Are you sure?'},  rel: "nofollow" %>
 									</li>
 	    						</ul>
-	  						</div>		    		
+							    <% unless vacation.description == ""%>
+	 								<button class="btn btn-primary pop" data-placement="top" data-toggle="popover" data-content="<%= vacation.description %>">Description</button>
+								<%end%>
+	  						<!-- </div>		    		 -->
 						</td>
 					</tr>
 				</tbody>
