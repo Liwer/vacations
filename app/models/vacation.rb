@@ -8,4 +8,7 @@ class Vacation < ApplicationRecord
 	 def transform_vacation_to_years_days
 	 	return (self.start_date.yday..self.end_date.yday).to_a
 	 end
+	 scope :year, lambda{|year|
+ 		 where("cast(strftime('%Y', start_date) as int) = ?", year ) if year.present?  
+	 }
 end

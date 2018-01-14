@@ -6,11 +6,16 @@ class VacationsController < ApplicationController
   # GET /vacations.json
   def index
     if user_signed_in?
-      @vacations = current_user.vacations
+      if params[:year]
+        @vacations = Vacation.year(params[:year])
+      else
+        @vacations = current_user.vacations
+      end
     else
       redirect_to  new_user_session_path
     end
     current_user.calculate
+    @years = current_user.vacations.map{|v| v[:start_date].year}.uniq
   end
 
   # GET /vacations/1
