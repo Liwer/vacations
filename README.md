@@ -1,11 +1,13 @@
 # Vacations
 
-This is an application in which you can add and track your holidays. You have the ability to filter them by year, delete and edit them at will.
+This is an application in which you can add and track your holidays.
+You have the ability to filter them by year, delete and edit them at will.
 
 ## Requirements
 
-Ruby version '2.5.0';
-Ruby on rails version '5.1.4';
+Ruby, version: '2.5.0';
+Ruby on rails, version: '5.1.4';
+Bundler, version: '1.16.1';
 
 ### To run the application, you need to:
 
