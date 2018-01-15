@@ -23,4 +23,4 @@ Bundler '1.16.1' version;
 3. email: "three@test.com", password: "111222", employment_date: "2018-01-01"
 
 You can change the user's data in a file: db/seeds.rb.  
-After the change run: `rails db:seed`
+After the change run: `rails db:seed`.
