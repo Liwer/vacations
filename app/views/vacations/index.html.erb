@@ -1,5 +1,4 @@
 <section class="indexVacation">
-    <%= link_to 'New Vacation', new_vacation_path, :class => "btn btn-primary newVacation"  %>
 	<div class="indexWrapper">
 		<p id="notice"><%= notice %></p>
 		<div class="row">
@@ -11,6 +10,7 @@
 		</div>
 		<div class="row">
 			<div class="dropdown">
+			    <%= link_to 'New Vacation', new_vacation_path, :class => "btn btn-primary newVacation"  %>
 			    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Year filter
 			    <span class="caret"></span></button>
 			    <ul class="dropdown-menu">
